@@ -63,7 +63,7 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-orbitron mb-4">Contact</h3>
             <ul className="space-y-2">
-              <li className="text-white/70 font-space">info@glitch3d.io</li>
+              <li className="text-white/70 font-space">glitch3dafrica@gmail.com</li>
               <li><a href="#team" className="text-glitch-pink hover:text-glitch-pink/80 transition-colors font-space">Media Inquiries</a></li>
               <li><a href="#sponsors" className="text-glitch-pink hover:text-glitch-pink/80 transition-colors font-space">Partnership Opportunities</a></li>
             </ul>
