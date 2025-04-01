@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button } from './ui/button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { XIcon, TGIcon } from './ui/Icons'
@@ -11,26 +11,107 @@ const teamMembers = [
     role: "Founder",
     image: "/team/ROC.jpg",
     socials: {
-      twitter: "https://twitter.com",
-      telegram: "https://linkedin.com",
-    }
-  },
-  {
-    name: "AY REACT",
-    role: "Developer/Designer (Team Lead)",
-    image: "/team/AY.jpg",
-    socials: {
-      twitter: "https://twitter.com",
-      telegram: "https://linkedin.com",
+      twitter: "https://x.com/Rocster_krypt/Core",
+      telegram: "#team",
     }
   },
   {
     name: "Cutexiaruby",
-    role: "Content (Team Lead)",
+    role: "Content (Lead)/Core",
     image: "/team/RUBY.jpg",
     socials: {
       twitter: "https://twitter.com",
+      telegram: "#team",
+    }
+  },
+  {
+    name: "AY REACT",
+    role: "Developer/Design (Lead)/Core",
+    image: "/team/AY.jpg",
+    socials: {
+      twitter: "https://x.com/ay_react",
+      telegram: "#team",
+    }
+  },
+  {
+    name: "Rukiz Cukiz",
+    role: "Content",
+    image: "/team/RUKIZ.jpg",
+    socials: {
+      twitter: "https://x.com/rukizcukiz ",
+      telegram: "#team",
+    }
+  },
+  {
+    name: "KC",
+    role: "Content/Core",
+    image: "/team/KC.jpg",
+    socials: {
+      twitter: "https://x.com/kcweb_3",
       telegram: "https://linkedin.com",
+    }
+  },
+  {
+    name: "RJ",
+    role: "Design",
+    image: "/team/RJ.jpg",
+    socials: {
+      twitter: "https://x.com/RejoiceOny",
+      telegram: "#team",
+    }
+  },
+  {
+    name: "Kunms",
+    role: "Outreach",
+    image: "team/KUNMS.jpg",
+    socials: {
+      twitter: "https://x.com/InvestorKunms",
+      telegram: "#team",
+    }
+  },
+  {
+    name: "Saxmanuel",
+    role: "Design",
+    image: "/team/SAX.jpg",
+    socials: {
+      twitter: "https://x.com/Saxmanuel_Web3?t=ckSkuU9pEz-dan-zJWSFKQ&s=09",
+      telegram: "#team",
+    }
+  },
+  {
+    name: "SwatB2K",
+    role: "Outreach (Team Lead)/Core",
+    image: "/team/SWAT.jpg",
+    socials: {
+      twitter: "https://x.com/swatb2k?s=21",
+      telegram: "#team",
+    }
+  },
+  {
+    name: "Vic.web3",
+    role: "Content",
+    image: "/team/VIC.jpg",
+    socials: {
+      twitter: "https://x.com/vicissol",
+      telegram: "#team",
+    }
+  },
+  {
+    name: "Evato",
+    role: "Core",
+    image: "/team/EVATO.jpg",
+    socials: {
+      twitter: "https://x.com/evatocrypt?s=21",
+      telegram: "#team",
+    }
+  },
+  {
+    name: "AyTee",
+    role: "Outreach",
+    image: "/team/AYTEE.jpg",
+    socials: {
+      twitter: "https://x.com/Ayteex?t=myI1AtWoHaLkSTEauQJuBA&s=09",
+      telegram: "#team",
     }
   },
   {
@@ -38,62 +119,35 @@ const teamMembers = [
     role: "Outreach",
     image: "/team/CAT.jpg",
     socials: {
-      twitter: "https://twitter.com",
-      telegram: "https://linkedin.com",
+      twitter: "https://x.com/kingcathereum?s=21",
+      telegram: "#team",
     }
   },
   {
-    name: "Alex Morgan",
-    role: "Lead Organizer",
-    image: "https://source.unsplash.com/random/300x300/?portrait&1",
+    name: "Unbothered",
+    role: "Media",
+    image: "/team/UNB.png",
     socials: {
-      twitter: "https://twitter.com",
-      telegram: "https://linkedin.com",
+      twitter: "https://x.com/unbothered9000?t=Hz4Xm9jsQU9tB_-KIgVYzg&s=09",
+      telegram: "#team",
     }
   },
   {
-    name: "Alex Morgan",
-    role: "Lead Organizer",
-    image: "https://source.unsplash.com/random/300x300/?portrait&1",
+    name: "Wonder Cruise",
+    role: "Logistics (Lead)",
+    image: "/team/WONDER.jpg",
     socials: {
-      twitter: "https://twitter.com",
-      telegram: "https://linkedin.com",
+      twitter: "https://x.com/wondercruise_?t=v57G-EHfQNhJkdpaZBCQ9g&s=09",
+      telegram: "#team",
     }
   },
   {
-    name: "Alex Morgan",
-    role: "Lead Organizer",
-    image: "https://source.unsplash.com/random/300x300/?portrait&1",
+    name: "Emmanuel Tega",
+    role: "Design",
+    image: "/team/TEGA.jpg",
     socials: {
-      twitter: "https://twitter.com",
-      telegram: "https://linkedin.com",
-    }
-  },
-  {
-    name: "Alex Morgan",
-    role: "Lead Organizer",
-    image: "https://source.unsplash.com/random/300x300/?portrait&1",
-    socials: {
-      twitter: "https://twitter.com",
-      telegram: "https://linkedin.com",
-    }
-  },
-  {
-    name: "Alex Morgan",
-    role: "Lead Organizer",
-    image: "https://source.unsplash.com/random/300x300/?portrait&1",
-    socials: {
-      twitter: "https://twitter.com",
-      telegram: "https://linkedin.com",
-    }
-  },
-  {
-    name: "Alex Morgan",
-    role: "Lead Organizer",
-    image: "https://source.unsplash.com/random/300x300/?portrait&1",
-    socials: {
-      twitter: "https://twitter.com",
-      telegram: "https://linkedin.com",
+      twitter: "https://x.com/emmanuelforty10?s=21",
+      telegram: "#team",
     }
   },
 ];

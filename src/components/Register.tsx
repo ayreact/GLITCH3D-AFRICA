@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { Button } from './ui/button';
 import { ArrowRight, Calendar, MapPin, Users } from 'lucide-react';
 

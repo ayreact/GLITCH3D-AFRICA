@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { TargetIcon, Users, Lightbulb, Rocket, Globe, Shield } from 'lucide-react';
 import { Button } from './ui/button';
 

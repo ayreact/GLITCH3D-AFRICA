@@ -1,6 +1,4 @@
 
-import React from 'react';
-
 const Sponsors = () => {
   // Sample logos - replace with actual sponsor logos
   const single_sponsor = [{ name: "Ethereum", url: "#" }]
@@ -48,7 +46,7 @@ const Sponsors = () => {
             Interested in sponsoring GLITCH3D? Contact our team for partnership opportunities
           </p>
           <button className="bg-transparent hover:bg-glitch-green/10 text-glitch-green border-2 border-glitch-green font-orbitron py-3 px-8 rounded-lg transition-colors">
-            BECOME A SPONSOR
+            <a href="https://t.me/rocster_solos" target="_blank">BECOME A SPONSOR</a>
           </button>
         </div>
       </div>

@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { ArrowUp } from 'lucide-react';
 import { XIcon, TGIcon, WAIcon } from './ui/Icons'
 
@@ -37,13 +36,13 @@ const Footer = () => {
               <span className='text-white/95 font-bold'>GLITCH3D</span> is reshaping Web3 culture beyond the GMs, creating a space for innovation, collaboration, and disruption.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white/60 hover:text-white transition-colors">
+              <a href="https://x.com/GLITCH3_D" className="text-white/60 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
                 <XIcon />
               </a>
-              <a href="#" className="text-white/60 hover:text-glitch-blue transition-colors">
+              <a href="coming-soon/" className="text-white/60 hover:text-glitch-blue transition-colors" rel="noopener noreferrer">
                 <TGIcon />
               </a>
-              <a href="#" className="text-white/60 hover:text-glitch-green transition-colors">
+              <a href="coming-soon/" className="text-white/60 hover:text-glitch-green transition-colors" rel="noopener noreferrer">
                 <WAIcon />
               </a>
             </div>
@@ -75,9 +74,9 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} GLITCH3D. All rights reserved.
           </p>
           <div className="flex space-x-6">
-            <a href="#" className="text-white/50 hover:text-white transition-colors text-sm font-space">Privacy Policy</a>
-            <a href="#" className="text-white/50 hover:text-white transition-colors text-sm font-space">Terms of Service</a>
-            <a href="#" className="text-white/50 hover:text-white transition-colors text-sm font-space">Cookie Policy</a>
+            <a href="privacy-policy/" className="text-white/50 hover:text-white transition-colors text-sm font-space" target="_blank">Privacy Policy</a>
+            <a href="terms-of-service/" className="text-white/50 hover:text-white transition-colors text-sm font-space" target="_blank">Terms of Service</a>
+            <a href="cookie-policy/" className="text-white/50 hover:text-white transition-colors text-sm font-space" target="_blank">Cookie Policy</a>
           </div>
         </div>
       </div>

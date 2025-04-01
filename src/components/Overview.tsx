@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { ExternalLink, Zap, Cpu, Code } from 'lucide-react';
 import { Button } from './ui/button';
 import { XIcon, TGIcon, WAIcon } from './ui/Icons'
@@ -68,17 +67,17 @@ const Overview = () => {
               </p>
               <div className="flex gap-4 mt-4">
                 <Button asChild variant="outline" size="icon" className="rounded-full border-white hover:bg-white/20 transition-colors">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="text-white">
+                  <a href="https://x.com/GLITCH3_D" target="_blank" rel="noopener noreferrer" className="text-white">
                     <XIcon />
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="icon" className="rounded-full border-glitch-blue hover:bg-glitch-blue/20 transition-colors">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="text-glitch-blue">
+                  <a href="coming-soon/" rel="noopener noreferrer" className="text-glitch-blue">
                     <TGIcon />
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="icon" className="rounded-full border-glitch-green hover:bg-glitch-green/20 transition-colors">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="text-glitch-green">
+                  <a href="coming-soon/" rel="noopener noreferrer" className="text-glitch-green">
                     <WAIcon />
                   </a>
                 </Button>
