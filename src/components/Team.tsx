@@ -11,26 +11,26 @@ const teamMembers = [
     role: "Founder",
     image: "/team/ROC.jpg",
     socials: {
-      twitter: "https://x.com/Rocster_krypt/Core",
-      telegram: "#team",
+      twitter: "https://x.com/Rocster_krypt",
+      telegram: "https://t.me/rocster_solos",
     }
   },
   {
     name: "Cutexiaruby",
-    role: "Content (Lead)/Core",
+    role: "Content (Lead)",
     image: "/team/RUBY.jpg",
     socials: {
-      twitter: "https://twitter.com",
-      telegram: "#team",
+      twitter: "https://x.com/cutexiaruby_j",
+      telegram: "https://t.me/cutexiaruby_j",
     }
   },
   {
     name: "AY REACT",
-    role: "Developer/Design (Lead)/Core",
+    role: "Developer & Design (Lead)",
     image: "/team/AY.jpg",
     socials: {
       twitter: "https://x.com/ay_react",
-      telegram: "#team",
+      telegram: "https://t.me/ay_react",
     }
   },
   {
@@ -39,16 +39,16 @@ const teamMembers = [
     image: "/team/RUKIZ.jpg",
     socials: {
       twitter: "https://x.com/rukizcukiz ",
-      telegram: "#team",
+      telegram: "https://t.me/Rukiz_2",
     }
   },
   {
     name: "KC",
-    role: "Content/Core",
+    role: "Content",
     image: "/team/KC.jpg",
     socials: {
       twitter: "https://x.com/kcweb_3",
-      telegram: "https://linkedin.com",
+      telegram: "https://t.me/KC_web3",
     }
   },
   {
@@ -57,7 +57,7 @@ const teamMembers = [
     image: "/team/RJ.jpg",
     socials: {
       twitter: "https://x.com/RejoiceOny",
-      telegram: "#team",
+      telegram: "https://t.me/Onyinyechirj",
     }
   },
   {
@@ -66,7 +66,7 @@ const teamMembers = [
     image: "team/KUNMS.jpg",
     socials: {
       twitter: "https://x.com/InvestorKunms",
-      telegram: "#team",
+      telegram: "https://t.me/InvestorKunms",
     }
   },
   {
@@ -75,16 +75,16 @@ const teamMembers = [
     image: "/team/SAX.jpg",
     socials: {
       twitter: "https://x.com/Saxmanuel_Web3?t=ckSkuU9pEz-dan-zJWSFKQ&s=09",
-      telegram: "#team",
+      telegram: "https://t.me/Saxmuel",
     }
   },
   {
     name: "SwatB2K",
-    role: "Outreach (Team Lead)/Core",
+    role: "Outreach (Team Lead)",
     image: "/team/SWAT.jpg",
     socials: {
       twitter: "https://x.com/swatb2k?s=21",
-      telegram: "#team",
+      telegram: "https://t.me/B2K_Swat",
     }
   },
   {
@@ -93,16 +93,16 @@ const teamMembers = [
     image: "/team/VIC.jpg",
     socials: {
       twitter: "https://x.com/vicissol",
-      telegram: "#team",
+      telegram: "https://t.me/Ottivic",
     }
   },
   {
     name: "Evato",
-    role: "Core",
+    role: "Logistics",
     image: "/team/EVATO.jpg",
     socials: {
       twitter: "https://x.com/evatocrypt?s=21",
-      telegram: "#team",
+      telegram: "https://t.me/E_VATO",
     }
   },
   {
@@ -111,7 +111,7 @@ const teamMembers = [
     image: "/team/AYTEE.jpg",
     socials: {
       twitter: "https://x.com/Ayteex?t=myI1AtWoHaLkSTEauQJuBA&s=09",
-      telegram: "#team",
+      telegram: "https://t.me/ayteex",
     }
   },
   {
@@ -120,16 +120,16 @@ const teamMembers = [
     image: "/team/CAT.jpg",
     socials: {
       twitter: "https://x.com/kingcathereum?s=21",
-      telegram: "#team",
+      telegram: "https://t.me/KingCather3um",
     }
   },
   {
     name: "Unbothered",
-    role: "Media",
+    role: "Media (Lead)",
     image: "/team/UNB.png",
     socials: {
       twitter: "https://x.com/unbothered9000?t=Hz4Xm9jsQU9tB_-KIgVYzg&s=09",
-      telegram: "#team",
+      telegram: "https://t.me/bothered4",
     }
   },
   {
@@ -138,7 +138,7 @@ const teamMembers = [
     image: "/team/WONDER.jpg",
     socials: {
       twitter: "https://x.com/wondercruise_?t=v57G-EHfQNhJkdpaZBCQ9g&s=09",
-      telegram: "#team",
+      telegram: "https://t.me/wondercruise",
     }
   },
   {
@@ -147,7 +147,7 @@ const teamMembers = [
     image: "/team/TEGA.jpg",
     socials: {
       twitter: "https://x.com/emmanuelforty10?s=21",
-      telegram: "#team",
+      telegram: "https://t.me/emmanuelep55",
     }
   },
 ];
