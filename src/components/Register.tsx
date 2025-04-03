@@ -3,6 +3,10 @@ import { Button } from './ui/button';
 import { ArrowRight, Calendar, MapPin, Users } from 'lucide-react';
 
 const Register = () => {
+  const ticketClick = () => {
+    window.alert("Registration link for GLITCH3D 2025 coming soon!");
+  };
+
   return (
     <section id="register" className="py-20 bg-gradient-to-b from-background to-black relative">
       <div className="container mx-auto px-4">
@@ -48,7 +52,7 @@ const Register = () => {
               </div>
             </div>
             
-            <Button asChild className="bg-gradient-to-r from-glitch-blue via-glitch-purple to-glitch-blue hover:opacity-90 text-white font-orbitron text-lg px-8 py-6 shadow-lg shadow-glitch-purple/20 group">
+            <Button onClick={ticketClick} asChild className="bg-gradient-to-r from-glitch-blue via-glitch-purple to-glitch-blue hover:opacity-90 text-white font-orbitron text-lg px-8 py-6 shadow-lg shadow-glitch-purple/20 group">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 REGISTER FOR GLITCH3D
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
