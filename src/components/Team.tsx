@@ -4,12 +4,11 @@ import { Button } from './ui/button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { XIcon, TGIcon } from './ui/Icons'
 
-// This is just sample data - replace with actual team members
 const teamMembers = [
   {
     name: "Rocster",
     role: "Founder",
-    image: "/team/ROC.jpg",
+    image: "ROC.jpg",
     socials: {
       twitter: "https://x.com/Rocster_krypt",
       telegram: "https://t.me/rocster_solos",
@@ -18,7 +17,7 @@ const teamMembers = [
   {
     name: "Cutexiaruby",
     role: "Content (Lead)",
-    image: "/team/RUBY.jpg",
+    image: "RUBY.jpg",
     socials: {
       twitter: "https://x.com/cutexiaruby_j",
       telegram: "https://t.me/cutexiaruby_j",
@@ -27,7 +26,7 @@ const teamMembers = [
   {
     name: "AY REACT",
     role: "Developer & Design (Lead)",
-    image: "/team/AY.jpg",
+    image: "AY.jpg",
     socials: {
       twitter: "https://x.com/ay_react",
       telegram: "https://t.me/ay_react",
@@ -36,7 +35,7 @@ const teamMembers = [
   {
     name: "Rukiz Cukiz",
     role: "Content",
-    image: "/team/RUKIZ.jpg",
+    image: "RUKIZ.jpg",
     socials: {
       twitter: "https://x.com/rukizcukiz ",
       telegram: "https://t.me/Rukiz_2",
@@ -45,7 +44,7 @@ const teamMembers = [
   {
     name: "KC",
     role: "Content",
-    image: "/team/KC.jpg",
+    image: "KC.jpg",
     socials: {
       twitter: "https://x.com/kcweb_3",
       telegram: "https://t.me/KC_web3",
@@ -54,7 +53,7 @@ const teamMembers = [
   {
     name: "RJ",
     role: "Design",
-    image: "/team/RJ.jpg",
+    image: "RJ.jpg",
     socials: {
       twitter: "https://x.com/RejoiceOny",
       telegram: "https://t.me/Onyinyechirj",
@@ -63,7 +62,7 @@ const teamMembers = [
   {
     name: "Kunms",
     role: "Outreach",
-    image: "team/KUNMS.jpg",
+    image: "KUNMS.jpg",
     socials: {
       twitter: "https://x.com/InvestorKunms",
       telegram: "https://t.me/InvestorKunms",
@@ -72,7 +71,7 @@ const teamMembers = [
   {
     name: "Saxmanuel",
     role: "Design",
-    image: "/team/SAX.jpg",
+    image: "SAX.jpg",
     socials: {
       twitter: "https://x.com/Saxmanuel_Web3?t=ckSkuU9pEz-dan-zJWSFKQ&s=09",
       telegram: "https://t.me/Saxmuel",
@@ -81,7 +80,7 @@ const teamMembers = [
   {
     name: "SwatB2K",
     role: "Outreach (Team Lead)",
-    image: "/team/SWAT.jpg",
+    image: "SWAT.jpg",
     socials: {
       twitter: "https://x.com/swatb2k?s=21",
       telegram: "https://t.me/B2K_Swat",
@@ -90,7 +89,7 @@ const teamMembers = [
   {
     name: "Vic.web3",
     role: "Content",
-    image: "/team/VIC.jpg",
+    image: "VIC.jpg",
     socials: {
       twitter: "https://x.com/vicissol",
       telegram: "https://t.me/Ottivic",
@@ -99,7 +98,7 @@ const teamMembers = [
   {
     name: "Evato",
     role: "Logistics",
-    image: "/team/EVATO.jpg",
+    image: "EVATO.jpg",
     socials: {
       twitter: "https://x.com/evatocrypt?s=21",
       telegram: "https://t.me/E_VATO",
@@ -108,7 +107,7 @@ const teamMembers = [
   {
     name: "AyTee",
     role: "Outreach",
-    image: "/team/AYTEE.jpg",
+    image: "AYTEE.jpg",
     socials: {
       twitter: "https://x.com/Ayteex?t=myI1AtWoHaLkSTEauQJuBA&s=09",
       telegram: "https://t.me/ayteex",
@@ -117,7 +116,7 @@ const teamMembers = [
   {
     name: "King Cathereum",
     role: "Outreach",
-    image: "/team/CAT.jpg",
+    image: "CAT.jpg",
     socials: {
       twitter: "https://x.com/kingcathereum?s=21",
       telegram: "https://t.me/KingCather3um",
@@ -126,7 +125,7 @@ const teamMembers = [
   {
     name: "Unbothered",
     role: "Media (Lead)",
-    image: "/team/UNB.png",
+    image: "UNB.png",
     socials: {
       twitter: "https://x.com/unbothered9000?t=Hz4Xm9jsQU9tB_-KIgVYzg&s=09",
       telegram: "https://t.me/bothered4",
@@ -135,7 +134,7 @@ const teamMembers = [
   {
     name: "Wonder Cruise",
     role: "Logistics (Lead)",
-    image: "/team/WONDER.jpg",
+    image: "WONDER.jpg",
     socials: {
       twitter: "https://x.com/wondercruise_?t=v57G-EHfQNhJkdpaZBCQ9g&s=09",
       telegram: "https://t.me/wondercruise",
@@ -144,7 +143,7 @@ const teamMembers = [
   {
     name: "Emmanuel Tega",
     role: "Design",
-    image: "/team/TEGA.jpg",
+    image: "TEGA.png",
     socials: {
       twitter: "https://x.com/emmanuelforty10?s=21",
       telegram: "https://t.me/emmanuelep55",
@@ -154,6 +153,7 @@ const teamMembers = [
 
 const Team = () => {
   const [currentPage, setCurrentPage] = useState(0);
+  const [imageLoaded, setImageLoaded] = useState<boolean[]>([]);
   const itemsPerPage = 4;
   const totalPages = Math.ceil(teamMembers.length / itemsPerPage);
 
@@ -190,20 +190,50 @@ const Team = () => {
                 <div className="bg-black/60 border border-white/10 rounded-lg overflow-hidden transition-all duration-300 hover:border-glitch-purple/50 group-hover:shadow-lg group-hover:shadow-glitch-purple/20">
                   <div className="relative aspect-square overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
-                    <img 
-                      src={member.image} 
-                      alt={member.name} 
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    
+                    {/* Blur Effect & Skeleton Loader */}
+                    <div
+                      className={`absolute inset-0 bg-glitch-blue/30 animate-pulse transition-opacity duration-300 ${
+                        imageLoaded[index] ? "opacity-0" : "opacity-100"
+                      }`}
+                    ></div>
+                    
+                    {/* Team Member Image */}
+                    <img
+                      src={`/team/${member.image}`}
+                      alt={member.name}
+                      className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${
+                        imageLoaded[index] ? "blur-0 opacity-100" : "blur-md opacity-0"
+                      }`}
+                      loading="lazy"
+                      onLoad={() => {
+                        setImageLoaded((prev) => {
+                          const newState = [...prev];
+                          newState[index] = true;
+                          return newState;
+                        });
+                      }}
                     />
                   </div>
+
                   <div className="p-6">
                     <h3 className="text-xl font-orbitron mb-2 text-white">{member.name}</h3>
                     <p className="text-glitch-pink font-space mb-4">{member.role}</p>
                     <div className="flex space-x-3">
-                      <a href={member.socials.twitter} target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">
+                      <a
+                        href={member.socials.twitter}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white/60 hover:text-white transition-colors"
+                      >
                         <XIcon />
                       </a>
-                      <a href={member.socials.telegram} target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-glitch-blue transition-colors">
+                      <a
+                        href={member.socials.telegram}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white/60 hover:text-glitch-blue transition-colors"
+                      >
                         <TGIcon />
                       </a>
                     </div>

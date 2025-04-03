@@ -1,0 +1,6 @@
+{
+    "rewirites": [
+        { "source": "/(.*)",
+    "destination": "/index.html"}
+    ]
+}

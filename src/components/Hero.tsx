@@ -22,7 +22,7 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 pt-20 z-20 text-center h-screen flex flex-col justify-center items-center">
         <div className="flex flex-col items-center justify-center">
-          <img 
+          <img
             src="/img/logo.png" 
             alt="GLITCH3D" 
             className={`w-40 md:w-60 mb-6 ${glitchActive ? 'animate-glitch' : 'animate-float'}`}
